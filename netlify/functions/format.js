@@ -23,7 +23,7 @@ export default async (req) => {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-haiku-4-5-20251001",
         max_tokens: 4096,
         system: "Convert the following website scan findings into a JSON array. Return ONLY the JSON array, starting with [ and ending with ]. Each object must have: id, category, name, severity (critical/warning/info/passed), description, suggestion, page.",
         messages: [{ role: "user", content: `Convert these findings to JSON:\n\n${text}` }],
